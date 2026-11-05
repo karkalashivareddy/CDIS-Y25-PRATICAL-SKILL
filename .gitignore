@@ -1,0 +1,18 @@
+# Temporary Microsoft Office files
+~$*
+
+# Windows system files
+Thumbs.db
+Desktop.ini
+
+# macOS system files
+.DS_Store
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.swp
+
+# Temporary files
+*.tmp
+*.temp
