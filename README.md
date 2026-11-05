@@ -45,7 +45,7 @@ CDIS-Y25-PRATICAL-SKILL/
 │
 ├── Practical/
 │   └── Practical-1/
-│       └── CDIS_Lab_Record_2520030105_Karkala_Shiva_Reddy.docx
+│       └── CDIS_Lab_Record_2520030105_Karkala_Shiva_Reddy.pdf
 │
 ├── .gitignore
 └── README.md
@@ -57,7 +57,7 @@ CDIS-Y25-PRATICAL-SKILL/
 
 | No. | Practical Title | Document | Status |
 | :---: | :--- | :--- | :---: |
-| 1 | To create an AWS free tier account to provision the resources | [Lab Record](Practical/Practical-1/CDIS_Lab_Record_2520030105_Karkala_Shiva_Reddy.docx) | ✅ Completed |
+| 1 | To create an AWS free tier account to provision the resources | [Lab Record](Practical/Practical-1/CDIS_Lab_Record_2520030105_Karkala_Shiva_Reddy.pdf) | ✅ Completed |
 
 > The index will be updated as additional practical experiments are completed and documented.
 
@@ -99,7 +99,7 @@ The project work associated with this course is maintained separately:
 | **Cloud Platform** | Amazon Web Services (AWS) |
 | **Core Services** | Amazon EC2, Amazon S3, Amazon RDS, AWS Lambda, Amazon DynamoDB |
 | **Console** | AWS Management Console |
-| **Documentation** | Microsoft Word (`.docx`) |
+| **Documentation** | PDF (exported from Microsoft Word) |
 | **Version Control** | Git and GitHub |
 
 ---
@@ -113,7 +113,7 @@ The project work associated with this course is maintained separately:
    ```
 
 2. Navigate to the practical folder you want to review.
-3. Open the corresponding `.docx` lab record using Microsoft Word or any compatible viewer.
+3. Open the corresponding `.pdf` lab record using any standard PDF viewer.
 4. Refer to the **Output** section of each record for the experiment evidence.
 
 ---
