@@ -1,11 +1,11 @@
-# CDIS-Y25 Practical Skills
+# CDIS-Y25 Practical & Skill Records
 
 ![Course](https://img.shields.io/badge/Course-Cloud%20Infrastructure%20%26%20Services-0A66C2)
 ![Program](https://img.shields.io/badge/Program-B.Tech%20CSE-1F6FEB)
 ![Year](https://img.shields.io/badge/Academic%20Year-2026-2EA043)
 ![Status](https://img.shields.io/badge/Status-In%20Progress-orange)
 
-A structured record of the practical experiments completed for the **Cloud Infrastructure and Services (CDIS)** course. This repository contains the laboratory documentation, step-by-step procedures, observations, and output evidence for each experiment performed during the academic session.
+A structured record of the practicals and skills completed for the **Cloud Infrastructure and Services (CDIS)** course. This repository contains the documentation, step-by-step procedures, observations, and output evidence for each practical and skill performed during the academic session.
 
 ---
 
@@ -13,7 +13,7 @@ A structured record of the practical experiments completed for the **Cloud Infra
 
 The **Cloud Infrastructure and Services** course introduces the fundamental concepts of cloud computing, including cloud service models, deployment models, virtualization, storage, networking, and the provisioning of cloud resources. The practical sessions are designed to provide hands-on experience with industry-leading cloud platforms such as **Amazon Web Services (AWS)**.
 
-Each practical is documented in a standard laboratory record format containing:
+Each practical and skill is documented in a standard record format containing:
 
 - **Aim** — the objective of the experiment
 - **Description** — the theoretical background and context
@@ -29,6 +29,7 @@ Each practical is documented in a standard laboratory record format containing:
 | :--- | :--- |
 | **Name** | Karkala Shiva Reddy |
 | **Roll Number** | 2520030105 |
+| **Section** | 3 |
 | **Program** | B.Tech. Computer Science and Engineering (CSE) |
 | **Trimester** | 5 |
 | **Course** | Cloud Infrastructure and Services |
@@ -47,6 +48,10 @@ CDIS-Y25-PRATICAL-SKILL/
 │   └── Practical-1/
 │       └── CDIS_Lab_Record_2520030105_Karkala_Shiva_Reddy.pdf
 │
+├── Skill/
+│   └── Skill-1/
+│       └── CDIS_Skill_Record_2520030105_Karkala_Shiva_Reddy.pdf
+│
 ├── .gitignore
 └── README.md
 ```
@@ -59,7 +64,17 @@ CDIS-Y25-PRATICAL-SKILL/
 | :---: | :--- | :--- | :---: |
 | 1 | To create an AWS free tier account to provision the resources | [Lab Record](Practical/Practical-1/CDIS_Lab_Record_2520030105_Karkala_Shiva_Reddy.pdf) | ✅ Completed |
 
-> The index will be updated as additional practical experiments are completed and documented.
+> The index will be updated as additional practicals are completed and documented.
+
+---
+
+## Skill Index
+
+| No. | Skill Title | Document | Status |
+| :---: | :--- | :--- | :---: |
+| 1 | Create an IAM user with programmatic access only, download the access key and secret key, and set up a billing alert for the account so that an email is received when the Free Tier limit is about to be crossed | [Skill Record](Skill/Skill-1/CDIS_Skill_Record_2520030105_Karkala_Shiva_Reddy.pdf) | ✅ Completed |
+
+> The index will be updated as additional skills are completed and documented.
 
 ---
 
@@ -84,6 +99,33 @@ An AWS free tier account was created successfully, and the required cloud resour
 
 ---
 
+## Skill 1 — IAM User with Programmatic Access and Billing Alert
+
+**Aim:** Create an IAM user with programmatic access only, download the access key and secret key, and set up a billing alert for the account so that an email is received when the Free Tier limit is about to be crossed.
+
+**Description:**
+An IAM user is an identity created within an AWS account. Programmatic access allows the user to call AWS services through the AWS CLI, the AWS SDKs or direct API calls using an access key, without console access. An access key consists of an Access Key ID and a Secret Access Key, and the secret key can be viewed or downloaded only once at the time of creation. Since the account is a free tier account, AWS Budgets is used to set up a zero spend budget that sends an email notification whenever the spending exceeds $0.01, alerting the account owner before the free tier limit is crossed.
+
+**Procedure Summary:**
+
+1. Open the IAM console, choose IAM users and click Create user.
+2. Enter the user name, keep console access unchecked (programmatic access only) and click Next.
+3. Select Attach policies directly and attach the AdministratorAccess policy.
+4. Review and create the user.
+5. Open the user, go to Security credentials and click Create access key.
+6. Select the Command Line Interface (CLI) use case and continue.
+7. Download the access key and secret key as a CSV file.
+8. Verify that the access key is listed with the status Active.
+9. Search for billing and open Billing and Cost Management.
+10. Go to Budgets and click Create budget.
+11. Select the Zero spend budget template.
+12. Enter the budget name and the email recipient, then create the budget.
+
+**Outcome:**
+An IAM user with programmatic access only was created successfully, the access key and secret access key were generated and downloaded, and a billing alert was set up using a zero spend budget so that an email is received when the spending is about to cross the free tier limit.
+
+---
+
 ## Project Repository
 
 The project work associated with this course is maintained separately:
@@ -97,7 +139,7 @@ The project work associated with this course is maintained separately:
 | Category | Tools / Services |
 | :--- | :--- |
 | **Cloud Platform** | Amazon Web Services (AWS) |
-| **Core Services** | Amazon EC2, Amazon S3, Amazon RDS, AWS Lambda, Amazon DynamoDB |
+| **Core Services** | Amazon EC2, Amazon S3, Amazon RDS, AWS Lambda, Amazon DynamoDB, AWS IAM, AWS Budgets |
 | **Console** | AWS Management Console |
 | **Documentation** | PDF (exported from Microsoft Word) |
 | **Version Control** | Git and GitHub |
@@ -112,17 +154,18 @@ The project work associated with this course is maintained separately:
    git clone https://github.com/karkalashivareddy/CDIS-Y25-PRATICAL-SKILL.git
    ```
 
-2. Navigate to the practical folder you want to review.
-3. Open the corresponding `.pdf` lab record using any standard PDF viewer.
-4. Refer to the **Output** section of each record for the experiment evidence.
+2. Navigate to the practical or skill folder you want to review.
+3. Open the corresponding `.pdf` record using any standard PDF viewer.
+4. Refer to the **Output** section of each record for the evidence.
 
 ---
 
 ## Notes
 
-- Each lab record is prepared in the prescribed institutional format.
+- Each record is prepared in the prescribed institutional format.
 - Screenshots and outputs are included as proof of successful completion.
-- Practicals are added progressively as the course advances.
+- Practicals and skills are added progressively as the course advances.
+- Sensitive credentials such as passwords and secret access keys are never included in the records.
 
 ---
 
@@ -131,6 +174,7 @@ The project work associated with this course is maintained separately:
 **Karkala Shiva Reddy**
 B.Tech. CSE — Trimester 5
 Roll Number: 2520030105
+Section: 3
 
 - GitHub: [@karkalashivareddy](https://github.com/karkalashivareddy)
 
