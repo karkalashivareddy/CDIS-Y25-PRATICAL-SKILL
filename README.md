@@ -45,7 +45,10 @@ Each practical and skill is documented in a standard record format containing:
 CDIS-Y25-PRATICAL-SKILL/
 │
 ├── Practical/
-│   └── Practical-1/
+│   ├── Practical-1/
+│   │   └── CDIS_Lab_Record_2520030105_Karkala_Shiva_Reddy.pdf
+│   │
+│   └── Practical-2/
 │       └── CDIS_Lab_Record_2520030105_Karkala_Shiva_Reddy.pdf
 │
 ├── Skill/
@@ -63,6 +66,7 @@ CDIS-Y25-PRATICAL-SKILL/
 | No. | Practical Title | Document | Status |
 | :---: | :--- | :--- | :---: |
 | 1 | To create an AWS free tier account to provision the resources | [Lab Record](Practical/Practical-1/CDIS_Lab_Record_2520030105_Karkala_Shiva_Reddy.pdf) | ✅ Completed |
+| 2 | Enabling MFA, creating a first Linux instance, and creating an S3 bucket with five uploaded objects | [Practical Record](Practical/Practical-2/CDIS_Lab_Record_2520030105_Karkala_Shiva_Reddy.pdf) | ✅ Completed |
 
 > The index will be updated as additional practicals are completed and documented.
 
@@ -96,6 +100,29 @@ The AWS Free Tier allows new users to explore and use a wide range of AWS cloud 
 
 **Outcome:**
 An AWS free tier account was created successfully, and the required cloud resources were provisioned and verified through the AWS Management Console.
+
+---
+
+## Practical 2 — MFA, Linux Instance and S3 Bucket
+
+**Aim:** To enable Multi-Factor Authentication (MFA) for secure access to the AWS account, create a first Linux instance in Amazon EC2 and connect to it, and create an S3 bucket and upload five objects with different file extensions.
+
+**Description:**
+Multi-Factor Authentication adds a second verification step to the user name and password. AWS supports passkeys and security keys, which use the device's fingerprint, face unlock or screen lock. Amazon EC2 provides resizable compute capacity in the cloud, and a Linux instance is launched from an Amazon Machine Image (AMI). The Amazon Linux 2023 AMI with the t3.micro instance type is free tier eligible. Amazon S3 is an object storage service in which data is stored as objects inside buckets, and Block Public Access keeps the bucket private.
+
+**Procedure Summary:**
+
+1. Open IAM security credentials and assign a passkey MFA device to the root account.
+2. Search for EC2 and open the EC2 Dashboard.
+3. Launch an Amazon Linux 2023 t3.micro instance named MYCOMPUTER with a new key pair and security group.
+4. Connect to the instance using EC2 Instance Connect and run basic Linux commands.
+5. Terminate the instance after verifying the commands.
+6. Open Amazon S3 and create a bucket in the Europe (Stockholm) region with public access blocked.
+7. Upload five files with different extensions (.pdf, .txt, .jpg, .csv and .docx).
+8. Create a second bucket to understand unique bucket naming and confirm that both buckets are listed.
+
+**Outcome:**
+Multi-Factor Authentication was enabled for the AWS account using a passkey, a first Linux instance was launched, connected and terminated successfully, and an S3 bucket was created with five objects of different file extensions. A second bucket was also created to verify unique bucket naming.
 
 ---
 
@@ -139,9 +166,9 @@ The project work associated with this course is maintained separately:
 | Category | Tools / Services |
 | :--- | :--- |
 | **Cloud Platform** | Amazon Web Services (AWS) |
-| **Core Services** | Amazon EC2, Amazon S3, Amazon RDS, AWS Lambda, Amazon DynamoDB, AWS IAM, AWS Budgets |
-| **Console** | AWS Management Console |
-| **Documentation** | PDF (exported from Microsoft Word) |
+| **Core Services** | Amazon EC2, Amazon S3, Amazon RDS, AWS Lambda, Amazon DynamoDB, AWS IAM (MFA), AWS Budgets |
+| **Console** | AWS Management Console, EC2 Instance Connect |
+| **Documentation** | PDF (institutional practical and skill record format) |
 | **Version Control** | Git and GitHub |
 
 ---
