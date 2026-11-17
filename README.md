@@ -52,7 +52,10 @@ CDIS-Y25-PRATICAL-SKILL/
 │       └── CDIS_Lab_Record_2520030105_Karkala_Shiva_Reddy.pdf
 │
 ├── Skill/
-│   └── Skill-1/
+│   ├── Skill-1/
+│   │   └── CDIS_Skill_Record_2520030105_Karkala_Shiva_Reddy.pdf
+│   │
+│   └── Skill-2/
 │       └── CDIS_Skill_Record_2520030105_Karkala_Shiva_Reddy.pdf
 │
 ├── .gitignore
@@ -77,6 +80,7 @@ CDIS-Y25-PRATICAL-SKILL/
 | No. | Skill Title | Document | Status |
 | :---: | :--- | :--- | :---: |
 | 1 | Create an IAM user with programmatic access only, download the access key and secret key, and set up a billing alert for the account so that an email is received when the Free Tier limit is about to be crossed | [Skill Record](Skill/Skill-1/CDIS_Skill_Record_2520030105_Karkala_Shiva_Reddy.pdf) | ✅ Completed |
+| 2 | Launch an Ubuntu EC2 instance, install the Nginx web server through a user data script at launch time and open the default page in a browser | [Skill Record](Skill/Skill-2/CDIS_Skill_Record_2520030105_Karkala_Shiva_Reddy.pdf) | ✅ Completed |
 
 > The index will be updated as additional skills are completed and documented.
 
@@ -150,6 +154,29 @@ An IAM user is an identity created within an AWS account. Programmatic access al
 
 **Outcome:**
 An IAM user with programmatic access only was created successfully, the access key and secret access key were generated and downloaded, and a billing alert was set up using a zero spend budget so that an email is received when the spending is about to cross the free tier limit.
+
+---
+
+## Skill 2 — Ubuntu EC2 Instance with Nginx using User Data
+
+**Aim:** Launch an Ubuntu EC2 instance, install the Nginx web server through a user data script at launch time and open the default page in a browser. Record the differences observed compared to the Amazon Linux and Apache steps.
+
+**Description:**
+EC2 user data is a set of instructions that AWS runs when an instance starts for the first time. On Linux it is a shell script, and the console base64-encodes it before passing it to the instance. The script updates the package lists with `apt`, installs Nginx, enables the service at boot and starts it, so the web server is ready without a manual login. Ubuntu uses the `apt` package manager with the default SSH user `ubuntu`, while Amazon Linux uses `yum` or `dnf` with the user `ec2-user`. Nginx and Apache also have different package and service names (`nginx` and `httpd`), so the user data script must match the operating system of the selected AMI.
+
+**Procedure Summary:**
+
+1. Search for EC2 and open the EC2 Dashboard.
+2. Launch an Ubuntu Server 26.04 LTS t3.micro instance named ubuntu-nginx-server with a new key pair `karkalashiva`.
+3. Allow SSH, HTTP and HTTPS in the security group and keep the storage at 8 GiB gp3.
+4. Launch the instance and connect through EC2 Instance Connect as `ubuntu`.
+5. Install Nginx with `apt` and enable and start the `nginx` service.
+6. Open the public IP address in a browser and verify the *Welcome to nginx!* page.
+7. Launch a second instance `ubuntu2` with the user data script pasted in the Advanced details section.
+8. Confirm that Nginx was installed automatically by the user data script.
+
+**Outcome:**
+An Ubuntu EC2 instance was launched, the Nginx web server was installed through a user data script at launch time, and the default Nginx page was opened in the browser. The differences between the Ubuntu with Nginx steps and the Amazon Linux with Apache steps were recorded.
 
 ---
 
