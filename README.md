@@ -1,237 +1,173 @@
-# CDIS-Y25 Practical & Skill Records
+<p align="center">
+  <img src="assets/hero.gif" alt="CDIS Y25 — Cloud Infrastructure and Services" width="100%">
+</p>
 
-![Course](https://img.shields.io/badge/Course-Cloud%20Infrastructure%20%26%20Services-0A66C2)
-![Program](https://img.shields.io/badge/Program-B.Tech%20CSE-1F6FEB)
-![Year](https://img.shields.io/badge/Academic%20Year-2026-2EA043)
-![Status](https://img.shields.io/badge/Status-In%20Progress-orange)
+<p align="center">
+  <a href="https://img.shields.io/badge/Course-Cloud%20Infrastructure%20%26%20Services-0A66C2"><img src="https://img.shields.io/badge/Course-Cloud%20Infrastructure%20%26%20Services-0A66C2" alt="Course"></a>
+  <a href="https://img.shields.io/badge/Program-B.Tech%20CSE-1F6FEB"><img src="https://img.shields.io/badge/Program-B.Tech%20CSE-1F6FEB" alt="Program"></a>
+  <a href="https://img.shields.io/badge/Trimester-5-2EA043"><img src="https://img.shields.io/badge/Trimester-5-2EA043" alt="Trimester"></a>
+  <a href="https://img.shields.io/badge/Status-Complete-2EA043"><img src="https://img.shields.io/badge/Status-Complete-2EA043" alt="Status"></a>
+</p>
 
-A structured record of the practicals and skills completed for the **Cloud Infrastructure and Services (CDIS)** course. This repository contains the documentation, step-by-step procedures, observations, and output evidence for each practical and skill performed during the academic session.
+Structured, verified lab records for the **Cloud Infrastructure and Services (25CS2206E)** course. Each record follows the prescribed institutional format and includes the aim, theory, procedure, result and output evidence.
+
+---
+
+## Contents
+
+- [Overview](#overview)
+- [Record index](#record-index)
+- [Repository structure](#repository-structure)
+- [Record details](#record-details)
+- [Workstation and toolchain](#workstation-and-toolchain)
+- [Documentation standard](#documentation-standard)
+- [Using this repository](#using-this-repository)
+- [Author](#author)
 
 ---
 
 ## Overview
 
-The **Cloud Infrastructure and Services** course introduces the fundamental concepts of cloud computing, including cloud service models, deployment models, virtualization, storage, networking, and the provisioning of cloud resources. The practical sessions are designed to provide hands-on experience with industry-leading cloud platforms such as **Amazon Web Services (AWS)**.
+The course covers cloud service models, virtualization, compute, storage, identity, networking and monitoring using Amazon Web Services. This repository holds the submitted practical and skill records for Trimester 5.
 
-Each practical and skill is documented in a standard record format containing:
-
-- **Aim** — the objective of the experiment
-- **Description** — the theoretical background and context
-- **Steps** — the procedure followed to complete the experiment
-- **Result** — the outcome of the experiment
-- **Output** — screenshots and evidence of the resources provisioned
-
----
-
-## Student Details
+Every record is a self-contained PDF prepared in the same layout: institutional cover, `CDIS - Y25` header, page numbering, numbered procedure, result and captioned output screenshots.
 
 | Field | Details |
 | :--- | :--- |
-| **Name** | Karkala Shiva Reddy |
-| **Roll Number** | 2520030105 |
-| **Section** | 3 |
-| **Program** | B.Tech. Computer Science and Engineering (CSE) |
-| **Trimester** | 5 |
-| **Course** | Cloud Infrastructure and Services |
-| **Course Code** | 25CS2206E |
-| **Academic Year** | 2026 |
-| **Institution** | Department of CSE |
+| Name | Karkala Shiva Reddy |
+| Roll number | 2520030105 |
+| Section | 3 |
+| Program | B.Tech. Computer Science and Engineering |
+| Trimester | 5 |
+| Course | Cloud Infrastructure and Services |
+| Course code | 25CS2206E |
+| Academic year | 2026–2027 |
+| Institution | Department of CSE |
 
 ---
 
-## Repository Structure
+## Record index
+
+### Practicals
+
+| No. | Experiment | Record |
+| :---: | :--- | :--- |
+| 1 | AWS Free Tier account creation | [Practical 1](Practical/Practical-1/CDIS_Lab_Record_2520030105_Karkala_Shiva_Reddy.pdf) |
+| 2 | MFA, first Linux instance and S3 bucket with five objects | [Practical 2](Practical/Practical-2/CDIS_Lab_Record_2520030105_Karkala_Shiva_Reddy.pdf) |
+| 3 | Creating an AMI; creating an EC2 instance using the AWS CLI | [Practical 3](Practical/Practical-3/CDIS_Lab_Record_2520030105_Karkala_Shiva_Reddy.pdf) |
+
+### Skills
+
+| No. | Skill | Record |
+| :---: | :--- | :--- |
+| 1 | IAM user with programmatic access and a free tier billing alert | [Skill 1](Skill/Skill-1/CDIS_Skill_Record_2520030105_Karkala_Shiva_Reddy.pdf) |
+| 2 | Ubuntu EC2 instance with Nginx installed through user data | [Skill 2](Skill/Skill-2/CDIS_Skill_Record_2520030105_Karkala_Shiva_Reddy.pdf) |
+
+---
+
+## Repository structure
 
 ```text
 CDIS-Y25-PRATICAL-SKILL/
-│
+├── assets/
+│   └── hero.gif                        # animated repository banner
 ├── Practical/
 │   ├── Practical-1/
-│   │   └── CDIS_Lab_Record_2520030105_Karkala_Shiva_Reddy.pdf
-│   │
-│   └── Practical-2/
-│       └── CDIS_Lab_Record_2520030105_Karkala_Shiva_Reddy.pdf
-│
+│   │   └── CDIS_Lab_Record_...pdf
+│   ├── Practical-2/
+│   │   └── CDIS_Lab_Record_...pdf
+│   └── Practical-3/
+│       └── CDIS_Lab_Record_...pdf
 ├── Skill/
 │   ├── Skill-1/
-│   │   └── CDIS_Skill_Record_2520030105_Karkala_Shiva_Reddy.pdf
-│   │
+│   │   └── CDIS_Skill_Record_...pdf
 │   └── Skill-2/
-│       └── CDIS_Skill_Record_2520030105_Karkala_Shiva_Reddy.pdf
-│
+│       └── CDIS_Skill_Record_...pdf
 ├── .gitignore
 └── README.md
 ```
 
 ---
 
-## Practical Index
+## Record details
 
-| No. | Practical Title | Document | Status |
-| :---: | :--- | :--- | :---: |
-| 1 | To create an AWS free tier account to provision the resources | [Lab Record](Practical/Practical-1/CDIS_Lab_Record_2520030105_Karkala_Shiva_Reddy.pdf) | ✅ Completed |
-| 2 | Enabling MFA, creating a first Linux instance, and creating an S3 bucket with five uploaded objects | [Practical Record](Practical/Practical-2/CDIS_Lab_Record_2520030105_Karkala_Shiva_Reddy.pdf) | ✅ Completed |
+### Practical 1 — AWS Free Tier account
 
-> The index will be updated as additional practicals are completed and documented.
+Created and verified an AWS Free Tier account for provisioning cloud resources. Covers identity and payment verification, activation of the Basic support plan and the first console sign-in.
 
----
+### Practical 2 — MFA, Linux instance and S3
 
-## Skill Index
+Enabled passkey MFA for the root account. Launched and connected to an Amazon Linux 2023 `t3.micro` instance using EC2 Instance Connect, ran Linux commands and terminated it. Created an S3 bucket with Block Public Access, uploaded five objects with different extensions and created a second bucket to verify global name uniqueness.
 
-| No. | Skill Title | Document | Status |
-| :---: | :--- | :--- | :---: |
-| 1 | Create an IAM user with programmatic access only, download the access key and secret key, and set up a billing alert for the account so that an email is received when the Free Tier limit is about to be crossed | [Skill Record](Skill/Skill-1/CDIS_Skill_Record_2520030105_Karkala_Shiva_Reddy.pdf) | ✅ Completed |
-| 2 | Launch an Ubuntu EC2 instance, install the Nginx web server through a user data script at launch time and open the default page in a browser | [Skill Record](Skill/Skill-2/CDIS_Skill_Record_2520030105_Karkala_Shiva_Reddy.pdf) | ✅ Completed |
+### Practical 3 — AMI and AWS CLI
 
-> The index will be updated as additional skills are completed and documented.
+**3(a) Amazon Machine Image:** Created `MyUbuntuAMI` from a running Ubuntu instance, verified the image details and `Available` state, terminated the source instance and launched new instances from the custom AMI. The output section contains 25 step-by-step screenshots.
 
----
+**3(b) EC2 instance using AWS CLI:** Documented the CLI workflow: configure credentials and region, list owned AMIs, launch an instance with `run-instances`, wait for the running state, verify status checks and terminate the instance. This part is documentation only; no screenshots were supplied.
 
-## Practical 1 — AWS Free Tier Account Setup
+### Skill 1 — IAM access key and billing alert
 
-**Aim:** To create an AWS free tier account to provision the resources.
+Created an IAM user with programmatic access only, generated and downloaded an access key, and configured a zero-spend AWS Budgets alert for the account. Secret values are not stored in this repository.
 
-**Description:**
-The AWS Free Tier allows new users to explore and use a wide range of AWS cloud services free of cost for a limited period. It includes *12-Months Free*, *Always Free*, and *Short-Term Trial* offers across services such as Amazon EC2, Amazon S3, Amazon RDS, AWS Lambda, Amazon DynamoDB, and Amazon SageMaker.
+### Skill 2 — Nginx through EC2 user data
 
-**Procedure Summary:**
-
-1. Open the AWS website and start the account creation process.
-2. Provide the account credentials and contact information.
-3. Complete identity and payment verification.
-4. Activate the Basic (Free) support plan.
-5. Sign in to the AWS Management Console.
-6. Provision and verify resources within the Free Tier limits.
-
-**Outcome:**
-An AWS free tier account was created successfully, and the required cloud resources were provisioned and verified through the AWS Management Console.
+Launched an Ubuntu EC2 instance and installed Nginx with a first-boot user data script. Verified the default `Welcome to nginx!` page through the public IP, compared Ubuntu/Nginx with Amazon Linux/Apache and confirmed automation by launching a second instance from user data.
 
 ---
 
-## Practical 2 — MFA, Linux Instance and S3 Bucket
+## Workstation and toolchain
 
-**Aim:** To enable Multi-Factor Authentication (MFA) for secure access to the AWS account, create a first Linux instance in Amazon EC2 and connect to it, and create an S3 bucket and upload five objects with different file extensions.
+The records were prepared and checked on a standard college workstation. The setup below is intentionally minimal and reproducible.
 
-**Description:**
-Multi-Factor Authentication adds a second verification step to the user name and password. AWS supports passkeys and security keys, which use the device's fingerprint, face unlock or screen lock. Amazon EC2 provides resizable compute capacity in the cloud, and a Linux instance is launched from an Amazon Machine Image (AMI). The Amazon Linux 2023 AMI with the t3.micro instance type is free tier eligible. Amazon S3 is an object storage service in which data is stored as objects inside buckets, and Block Public Access keeps the bucket private.
-
-**Procedure Summary:**
-
-1. Open IAM security credentials and assign a passkey MFA device to the root account.
-2. Search for EC2 and open the EC2 Dashboard.
-3. Launch an Amazon Linux 2023 t3.micro instance named MYCOMPUTER with a new key pair and security group.
-4. Connect to the instance using EC2 Instance Connect and run basic Linux commands.
-5. Terminate the instance after verifying the commands.
-6. Open Amazon S3 and create a bucket in the Europe (Stockholm) region with public access blocked.
-7. Upload five files with different extensions (.pdf, .txt, .jpg, .csv and .docx).
-8. Create a second bucket to understand unique bucket naming and confirm that both buckets are listed.
-
-**Outcome:**
-Multi-Factor Authentication was enabled for the AWS account using a passkey, a first Linux instance was launched, connected and terminated successfully, and an S3 bucket was created with five objects of different file extensions. A second bucket was also created to verify unique bucket naming.
+| Component | Setup | Use |
+| :--- | :--- | :--- |
+| Operating system | Windows 11 | Console access, screenshots and document preparation |
+| Browser | Google Chrome with AWS Console tabs | All AWS Management Console operations |
+| AWS access | Root account with MFA; IAM user for programmatic access | Console work and AWS CLI configuration |
+| AWS CLI | Version 2, configured with `eu-north-1` / `us-east-1` and JSON output | Part 3(b) and resource verification |
+| Source control | Git and GitHub, `main` branch | Version history and submission |
+| Editor | Visual Studio Code | README and script editing |
+| Runtime | Python 3.13 | PDF assembly and screenshot processing |
+| Python packages | PyMuPDF, Pillow | PDF layout, image export and verification |
+| Evidence capture | Windows screenshot folder, resized before insertion | Output figures in each record |
+| Credentials | Stored outside the repository; placeholders used in documents | Security of keys and account data |
 
 ---
 
-## Skill 1 — IAM User with Programmatic Access and Billing Alert
+## Documentation standard
 
-**Aim:** Create an IAM user with programmatic access only, download the access key and secret key, and set up a billing alert for the account so that an email is received when the Free Tier limit is about to be crossed.
-
-**Description:**
-An IAM user is an identity created within an AWS account. Programmatic access allows the user to call AWS services through the AWS CLI, the AWS SDKs or direct API calls using an access key, without console access. An access key consists of an Access Key ID and a Secret Access Key, and the secret key can be viewed or downloaded only once at the time of creation. Since the account is a free tier account, AWS Budgets is used to set up a zero spend budget that sends an email notification whenever the spending exceeds $0.01, alerting the account owner before the free tier limit is crossed.
-
-**Procedure Summary:**
-
-1. Open the IAM console, choose IAM users and click Create user.
-2. Enter the user name, keep console access unchecked (programmatic access only) and click Next.
-3. Select Attach policies directly and attach the AdministratorAccess policy.
-4. Review and create the user.
-5. Open the user, go to Security credentials and click Create access key.
-6. Select the Command Line Interface (CLI) use case and continue.
-7. Download the access key and secret key as a CSV file.
-8. Verify that the access key is listed with the status Active.
-9. Search for billing and open Billing and Cost Management.
-10. Go to Budgets and click Create budget.
-11. Select the Zero spend budget template.
-12. Enter the budget name and the email recipient, then create the budget.
-
-**Outcome:**
-An IAM user with programmatic access only was created successfully, the access key and secret access key were generated and downloaded, and a billing alert was set up using a zero spend budget so that an email is received when the spending is about to cross the free tier limit.
+- A4 page, 1-inch margins, institutional cover, `CDIS - Y25` header and centred page number.
+- Consistent section order: **Aim → Description → Steps → Result → Output**.
+- Figures are captioned and referenced in the order of execution.
+- Account identifiers are limited to the AWS account number where needed for evidence; passwords, secret keys and private key files are never included.
+- Every PDF is checked for page count, embedded figures, text overflow and missing headers before it is added to the repository.
 
 ---
 
-## Skill 2 — Ubuntu EC2 Instance with Nginx using User Data
+## Using this repository
 
-**Aim:** Launch an Ubuntu EC2 instance, install the Nginx web server through a user data script at launch time and open the default page in a browser. Record the differences observed compared to the Amazon Linux and Apache steps.
-
-**Description:**
-EC2 user data is a set of instructions that AWS runs when an instance starts for the first time. On Linux it is a shell script, and the console base64-encodes it before passing it to the instance. The script updates the package lists with `apt`, installs Nginx, enables the service at boot and starts it, so the web server is ready without a manual login. Ubuntu uses the `apt` package manager with the default SSH user `ubuntu`, while Amazon Linux uses `yum` or `dnf` with the user `ec2-user`. Nginx and Apache also have different package and service names (`nginx` and `httpd`), so the user data script must match the operating system of the selected AMI.
-
-**Procedure Summary:**
-
-1. Search for EC2 and open the EC2 Dashboard.
-2. Launch an Ubuntu Server 26.04 LTS t3.micro instance named ubuntu-nginx-server with a new key pair `karkalashiva`.
-3. Allow SSH, HTTP and HTTPS in the security group and keep the storage at 8 GiB gp3.
-4. Launch the instance and connect through EC2 Instance Connect as `ubuntu`.
-5. Install Nginx with `apt` and enable and start the `nginx` service.
-6. Open the public IP address in a browser and verify the *Welcome to nginx!* page.
-7. Launch a second instance `ubuntu2` with the user data script pasted in the Advanced details section.
-8. Confirm that Nginx was installed automatically by the user data script.
-
-**Outcome:**
-An Ubuntu EC2 instance was launched, the Nginx web server was installed through a user data script at launch time, and the default Nginx page was opened in the browser. The differences between the Ubuntu with Nginx steps and the Amazon Linux with Apache steps were recorded.
-
----
-
-## Project Repository
-
-The project work associated with this course is maintained separately:
-
-- **CDIS-KLH-Y25-Project** — [https://github.com/karkalashivareddy/CDIS-KLH-Y25-Project](https://github.com/karkalashivareddy/CDIS-KLH-Y25-Project)
-
----
-
-## Tools and Technologies
-
-| Category | Tools / Services |
-| :--- | :--- |
-| **Cloud Platform** | Amazon Web Services (AWS) |
-| **Core Services** | Amazon EC2, Amazon S3, Amazon RDS, AWS Lambda, Amazon DynamoDB, AWS IAM (MFA), AWS Budgets |
-| **Console** | AWS Management Console, EC2 Instance Connect |
-| **Documentation** | PDF (institutional practical and skill record format) |
-| **Version Control** | Git and GitHub |
-
----
-
-## How to Use This Repository
-
-1. Clone the repository:
+1. Clone the repository.
 
    ```bash
    git clone https://github.com/karkalashivareddy/CDIS-Y25-PRATICAL-SKILL.git
+   cd CDIS-Y25-PRATICAL-SKILL
    ```
 
-2. Navigate to the practical or skill folder you want to review.
-3. Open the corresponding `.pdf` record using any standard PDF viewer.
-4. Refer to the **Output** section of each record for the evidence.
+2. Open a record from the index above.
 
----
+3. Use the **Output** section of each PDF for the submitted evidence.
 
-## Notes
-
-- Each record is prepared in the prescribed institutional format.
-- Screenshots and outputs are included as proof of successful completion.
-- Practicals and skills are added progressively as the course advances.
-- Sensitive credentials such as passwords and secret access keys are never included in the records.
+GitHub's inline PDF preview can occasionally fail on large files. Use the **Download raw file** option or open the PDF directly from the raw link if that happens.
 
 ---
 
 ## Author
 
-**Karkala Shiva Reddy**
-B.Tech. CSE — Trimester 5
-Roll Number: 2520030105
-Section: 3
+**Karkala Shiva Reddy**  
+B.Tech. CSE — Trimester 5 · Roll 2520030105 · Section 3
 
-- GitHub: [@karkalashivareddy](https://github.com/karkalashivareddy)
+- [GitHub](https://github.com/karkalashivareddy)
 
 ---
 
-*This repository is maintained for academic purposes as part of the CDIS course.*
+*Maintained as an academic record for the CDIS course, 2026–2027.*

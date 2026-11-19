@@ -13,6 +13,15 @@ Desktop.ini
 .idea/
 *.swp
 
+# Python and build artifacts
+__pycache__/
+*.py[cod]
+build/
+dist/
+.venv/
+venv/
+*.log
+
 # Temporary files
 *.tmp
 *.temp
