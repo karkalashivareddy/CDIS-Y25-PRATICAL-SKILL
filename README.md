@@ -30,7 +30,7 @@ Structured, verified lab records for the **Cloud Infrastructure and Services (25
 
 The course covers cloud service models, virtualization, compute, storage, identity, networking and monitoring using Amazon Web Services. This repository holds the submitted practical and skill records for Trimester 5.
 
-Every record is a self-contained PDF prepared in the same layout: institutional cover, `CDIS - Y25` header, page numbering, numbered procedure, result and captioned output screenshots.
+Every record is a self-contained PDF prepared in the same layout: institutional cover, `CDIS - Y25` header, page numbering, numbered procedure, result and captioned output screenshots where evidence was supplied.
 
 | Field | Details |
 | :--- | :--- |
@@ -62,6 +62,9 @@ Every record is a self-contained PDF prepared in the same layout: institutional 
 | :---: | :--- | :--- |
 | 1 | IAM user with programmatic access and a free tier billing alert | [Skill 1](Skill/Skill-1/CDIS_Skill_Record_2520030105_Karkala_Shiva_Reddy.pdf) |
 | 2 | Ubuntu EC2 instance with Nginx installed through user data | [Skill 2](Skill/Skill-2/CDIS_Skill_Record_2520030105_Karkala_Shiva_Reddy.pdf) |
+| 3 | Ubuntu EC2 instance with Nginx installed through user data (documentation) | [Skill 3](Skill/Skill-3/CDIS_Skill_Record_2520030105_Karkala_Shiva_Reddy.pdf) |
+| 4 | S3 versioning, earlier-version restore and Glacier lifecycle rule | [Skill 4](Skill/Skill-4/CDIS_Skill_Record_2520030105_Karkala_Shiva_Reddy.pdf) |
+| 5 | EC2 instance state control from the AWS CLI | [Skill 5](Skill/Skill-5/CDIS_Skill_Record_2520030105_Karkala_Shiva_Reddy.pdf) |
 
 ---
 
@@ -81,7 +84,13 @@ CDIS-Y25-PRATICAL-SKILL/
 ├── Skill/
 │   ├── Skill-1/
 │   │   └── CDIS_Skill_Record_...pdf
-│   └── Skill-2/
+│   ├── Skill-2/
+│   │   └── CDIS_Skill_Record_...pdf
+│   ├── Skill-3/
+│   │   └── CDIS_Skill_Record_...pdf
+│   ├── Skill-4/
+│   │   └── CDIS_Skill_Record_...pdf
+│   └── Skill-5/
 │       └── CDIS_Skill_Record_...pdf
 ├── .gitignore
 └── README.md
@@ -113,6 +122,18 @@ Created an IAM user with programmatic access only, generated and downloaded an a
 
 Launched an Ubuntu EC2 instance and installed Nginx with a first-boot user data script. Verified the default `Welcome to nginx!` page through the public IP, compared Ubuntu/Nginx with Amazon Linux/Apache and confirmed automation by launching a second instance from user data.
 
+### Skill 3 — Nginx through user data (documentation)
+
+Documented the Ubuntu EC2 and Nginx user data workflow, including the boot script, the service-name differences between Nginx and Apache, and the HTTP security-group requirement. No separate screenshots were supplied for this skill, so the record is documentation only.
+
+### Skill 4 — S3 versioning and lifecycle
+
+Enabled versioning on `s3bucketversioncdis105` in `ap-south-1`, uploaded `test.txt` twice with different content (11.0 B then 48.0 B), deleted the latest version to restore `hello world` as the current object, and created the `TestLifeCycle` rule to transition objects to S3 Glacier after 30 days. The output section contains 11 captioned console screenshots; the test objects were emptied after verification.
+
+### Skill 5 — EC2 control through the AWS CLI
+
+Created the `EC2-CLI-Role` IAM role with `AmazonEC2FullAccess`, attached it to the `MyWeb` instance, installed AWS CLI 2.42.1 on Ubuntu and verified the assumed role with `aws sts get-caller-identity`. The record documents `describe-instances`, `stop-instances`, `start-instances` and `terminate-instances` with `--region eu-north-1` and the real instance ID. The output section contains 18 captioned setup and authentication screenshots; the instance-state commands are presented as a command reference.
+
 ---
 
 ## Workstation and toolchain
@@ -130,7 +151,7 @@ The records were prepared and checked on a standard college workstation. The set
 | Runtime | Python 3.13 | PDF assembly and screenshot processing |
 | Python packages | PyMuPDF, Pillow | PDF layout, image export and verification |
 | Evidence capture | Windows screenshot folder, resized before insertion | Output figures in each record |
-| Credentials | Stored outside the repository; placeholders used in documents | Security of keys and account data |
+| Credentials | Stored outside the repository; only non-secret identifiers appear in documents | Security of keys and account data |
 
 ---
 
