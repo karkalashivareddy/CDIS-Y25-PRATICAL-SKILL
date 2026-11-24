@@ -65,6 +65,7 @@ Every record is a self-contained PDF prepared in the same layout: institutional 
 | 3 | Ubuntu EC2 instance with Nginx installed through user data (documentation) | [Skill 3](Skill/Skill-3/CDIS_Skill_Record_2520030105_Karkala_Shiva_Reddy.pdf) |
 | 4 | S3 versioning, earlier-version restore and Glacier lifecycle rule | [Skill 4](Skill/Skill-4/CDIS_Skill_Record_2520030105_Karkala_Shiva_Reddy.pdf) |
 | 5 | EC2 instance state control from the AWS CLI | [Skill 5](Skill/Skill-5/CDIS_Skill_Record_2520030105_Karkala_Shiva_Reddy.pdf) |
+| 6 | AMI creation, cross-Region copy and instance verification | [Skill 6](Skill/Skill-6/CDIS_Skill_Record_2520030105_Karkala_Shiva_Reddy.pdf) |
 
 ---
 
@@ -90,8 +91,10 @@ CDIS-Y25-PRATICAL-SKILL/
 │   │   └── CDIS_Skill_Record_...pdf
 │   ├── Skill-4/
 │   │   └── CDIS_Skill_Record_...pdf
-│   └── Skill-5/
-│       └── CDIS_Skill_Record_...pdf
+│   ├── Skill-5/
+│   │   └── CDIS_Skill_Record_...pdf
+│   ├── Skill-6/
+│   │   └── CDIS_Skill_Record_...pdf
 ├── .gitignore
 └── README.md
 ```
@@ -133,6 +136,10 @@ Enabled versioning on `s3bucketversioncdis105` in `ap-south-1`, uploaded `test.t
 ### Skill 5 — EC2 control through the AWS CLI
 
 Created the `EC2-CLI-Role` IAM role with `AmazonEC2FullAccess`, attached it to the `MyWeb` instance, installed AWS CLI 2.42.1 on Ubuntu and verified the assumed role with `aws sts get-caller-identity`. The record documents `describe-instances`, `stop-instances`, `start-instances` and `terminate-instances` with `--region eu-north-1` and the real instance ID. The output section contains 18 captioned setup and authentication screenshots; the instance-state commands are presented as a command reference.
+
+### Skill 6 — AMI creation and cross-Region copy
+
+Created the Apache web server `MYweb` (`i-0efae0cc7751f3952`) in `ap-south-1`, verified its website, and created `My-WebServer-AMI` (`ami-00b16bb3c8d7a9fbf`). A copy named `My-WebServer-AMI-Singapore` (`ami-08036514b9c4c52ef`) and the instance `MYweb-Singapore` (`i-0d24d11c591233052`) were launched, but the verified console Region, URL and AMI list place both resources in `ap-south-1`, not Singapore. The record includes a Region verification table, the required corrective action and 14 captioned screenshots.
 
 ---
 
