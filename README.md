@@ -55,6 +55,7 @@ Every record is a self-contained PDF prepared in the same layout: institutional 
 | 1 | AWS Free Tier account creation | [Practical 1](Practical/Practical-1/CDIS_Lab_Record_2520030105_Karkala_Shiva_Reddy.pdf) |
 | 2 | MFA, first Linux instance and S3 bucket with five objects | [Practical 2](Practical/Practical-2/CDIS_Lab_Record_2520030105_Karkala_Shiva_Reddy.pdf) |
 | 3 | Creating an AMI; creating an EC2 instance using the AWS CLI | [Practical 3](Practical/Practical-3/CDIS_Lab_Record_2520030105_Karkala_Shiva_Reddy.pdf) |
+| 4 | Python Lambda function with an SQS trigger and CloudWatch verification | [Practical 4](Practical/Practical-4/CDIS_Lab_Record_2520030105_Karkala_Shiva_Reddy.pdf) |
 
 ### Skills
 
@@ -80,7 +81,9 @@ CDIS-Y25-PRATICAL-SKILL/
 │   │   └── CDIS_Lab_Record_...pdf
 │   ├── Practical-2/
 │   │   └── CDIS_Lab_Record_...pdf
-│   └── Practical-3/
+│   ├── Practical-3/
+│   │   └── CDIS_Lab_Record_...pdf
+│   └── Practical-4/
 │       └── CDIS_Lab_Record_...pdf
 ├── Skill/
 │   ├── Skill-1/
@@ -116,6 +119,10 @@ Enabled passkey MFA for the root account. Launched and connected to an Amazon Li
 **3(a) Amazon Machine Image:** Created `MyUbuntuAMI` from a running Ubuntu instance, verified the image details and `Available` state, terminated the source instance and launched new instances from the custom AMI. The output section contains 25 step-by-step screenshots.
 
 **3(b) EC2 instance using AWS CLI:** Documented the CLI workflow: configure credentials and region, list owned AMIs, launch an instance with `run-instances`, wait for the running state, verify status checks and terminate the instance. This part is documentation only; no screenshots were supplied.
+
+### Practical 4 — Lambda with SQS trigger
+
+Created the `MyFirstPythonLambda` Python 3.12 function, deployed and tested it with a JSON test event, and verified the execution result and CloudWatch log stream. Created the `Student-Lambda-Queue` SQS queue, attached `AWSLambdaSQSQueueExecutionRole` to the Lambda execution role, added SQS as an active trigger, and updated the handler to print each message body. The output section contains 12 captioned real AWS console screenshots from the available gallery captures, covering the Lambda console, function creation, code editor, testing, SQS trigger setup and queue details.
 
 ### Skill 1 — IAM access key and billing alert
 
